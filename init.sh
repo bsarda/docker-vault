@@ -52,7 +52,7 @@ else
     echo "Vault Already initialized, unseal only"
     # start server
     nohup vault server -config /var/local/vault/vault.conf &
-    sleep 5
+    sleep 4
     # read from files
     if [ ! -f /data/unsealKey1 ]; then
       # seems to be an update... moving to standard location
